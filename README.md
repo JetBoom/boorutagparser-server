@@ -19,11 +19,23 @@ You can also just use "npm install boorutagparser-server" if you prefer.
 ### Linux (Debian-based)
 
 ```text
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-sudo apt-get install -y nodejs
-npm install boorutagparser-server
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+sudo apt-get install -y nodejs git
+sudo apt-get install git
+git clone https://github.com/jetboom/boorutagparser-server
+cd boorutagparser-server
+npm install
 
-nodejs boorutagparser-server
+node index.js
 ```
 
-Package might be named "node" instead of "nodejs" for some people.
+### Arch Linux
+
+```text
+sudo pacman -S nodejs npm git
+git clone https://github.com/jetboom/boorutagparser-server
+cd boorutagparser-server
+npm install
+
+node index.js
+```

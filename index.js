@@ -85,7 +85,7 @@ function handleRequest(req, response)
 			    headers: headers
 			}
 
-			cloudscraper.request(
+			cloudscraper(
 				{
 					method: 'GET',
                 	url:args,
