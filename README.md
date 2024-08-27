@@ -1,41 +1,13 @@
 # boorutagparser-server
 
-Saves requests from https://github.com/jetboom/boorutagparser as file/tag list pairs for extremely easy bulk import of tagged items in to Hydrus Network.
+Saves requests from [boorutagparser](https://github.com/jetboom/boorutagparser) as file/tag pairs for extremely easy bulk import in to [Hydrus Network](https://github.com/hydrusnetwork/hydrus).
 
-![](https://raw.githubusercontent.com/JetBoom/boorutagparser-server/master/boorutagparser-server.jpg)
+![](https://raw.githubusercontent.com/JetBoom/boorutagparser-server/master/docs/boorutagparser-server.jpg)
 
 ## Usage
 
-### Windows
-
-1. Install Node.js if you don't have it: https://nodejs.org/en/
-2. [Download and extract the master](https://github.com/JetBoom/boorutagparser-server/archive/master.zip) somewhere.
-3. Run install_modules.bat once
-4. Run boorutagparser-server.bat. Keep it open.
-5. The [web addon](github.com/jetboom/boorutagparser) button for downloading images will now work.
-
-You can also just use "npm install boorutagparser-server" if you prefer.
-
-### Linux (Debian-based)
-
-```text
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-sudo apt-get install -y nodejs git
-sudo apt-get install git
-git clone https://github.com/jetboom/boorutagparser-server
-cd boorutagparser-server
-npm install
-
-node index.js
-```
-
-### Arch Linux
-
-```text
-sudo pacman -S nodejs npm git
-git clone https://github.com/jetboom/boorutagparser-server
-cd boorutagparser-server
-npm install
-
-node index.js
-```
+1. Install Python 3 if you don't have it.
+2. Run `python boorutagparserserver`
+3. Keep the terminal window open.
+4. The [web addon](https://github.com/jetboom/boorutagparser) button for downloading images will now work.
+5. Import the import_me folder that is created with Hydrus. All tags should be automatically applied to any images downloaded.
